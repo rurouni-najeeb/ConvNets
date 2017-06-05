@@ -54,8 +54,7 @@ https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz
 The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images. 
 
 The dataset is divided into five training batches and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class. 
-![CIFAR-10 dataset](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwju88OduqfUAhUEQo8KHbEoCZEQjRwIBw&url=https%3A%2F%2Fwww.kaggle.com%2Fc%2Fcifar-10&psig=AFQjCNFeOT6wbdPjA0xEv1Nd0kxziSC69w&ust=1496777872226026)
-
+![CIFAR-10 dataset](images/cifar-10.png)
 
 
 ## About VGG Net
@@ -71,7 +70,7 @@ Our main contribution is a rigorous evaluation of networks of increasing depth, 
 
 ## Visualisation of VGG Net Activation Maps
 * Input Image
-[Input Image](images/car.jpg)
+![Input Image](images/car.jpg)
 
 * First Convolution Layer Activation Map
 
