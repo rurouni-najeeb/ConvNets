@@ -9,7 +9,7 @@ The repository contains three code files namely **make\_cnn.py**, **visualising\
 * **visualising\_vgg.py** contains methods to visualise the activation maps for the first two layers and average pooling.
 * **CNN.ipynb** is an Ipython Notebook that contains Visualisation and descriptive code for constructing a simple ConvNet
 
-### Prerequiisites
+### Prerequisites
 
 Following are some of the prerequisites that one needs to install to run the above code
 
@@ -17,9 +17,9 @@ Following are some of the prerequisites that one needs to install to run the abo
 Python v2.7.x
 TensorFlow v1.1
 Ipython Notebook
-VGG Network Weights : http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_16_layers.caffemodel
+VGG Network Weights 
+http://www.robots.ox.ac.uk/~vgg/software/very_deep/caffe/VGG_ILSVRC_16_layers.caffemodel
 tqdm
-
 ```
 
 ### Installing
@@ -50,27 +50,24 @@ The dataset which was used to train the Convolutional Neural Network is CIFAR - 
 
 ```
 https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz
-
 ```
 The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images. 
 
 The dataset is divided into five training batches and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class. 
-[CIFAR-10 dataset](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwju88OduqfUAhUEQo8KHbEoCZEQjRwIBw&url=https%3A%2F%2Fwww.kaggle.com%2Fc%2Fcifar-10&psig=AFQjCNFeOT6wbdPjA0xEv1Nd0kxziSC69w&ust=1496777872226026)
+![CIFAR-10 dataset](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwju88OduqfUAhUEQo8KHbEoCZEQjRwIBw&url=https%3A%2F%2Fwww.kaggle.com%2Fc%2Fcifar-10&psig=AFQjCNFeOT6wbdPjA0xEv1Nd0kxziSC69w&ust=1496777872226026)
 
 
 
 ## About VGG Net
-According to the authors of VGG Net Karen Simonyan and Andrew Zisserman
-```
+According to the authors of VGG Net, Karen Simonyan and Andrew Zisserman
 
-Convolutional networks (ConvNets) currently set the state of the art in visual recognition. The aim of this project is to investigate how the ConvNet depth affects their accuracy in the large-scale image recognition setting. 
-
+Convolutional networks (ConvNets) currently set the state of the art in visual recognition. 
+The aim of this project is to investigate how the ConvNet depth affects their accuracy in the large-scale image recognition setting. 
 Our main contribution is a rigorous evaluation of networks of increasing depth, which shows that a significant improvement on the prior-art configurations can be achieved by increasing the depth to 16-19 weight layers, which is substantially deeper than what has been used in the prior art. To reduce the number of parameters in such very deep networks, we use very small 3×3 filters in all convolutional layers (the convolution stride is set to 1). Please see our technical report for more details.
 
-```
 
 ## Computation Graph for CNN
-[graph](images/graph.png)
+![graph](images/graph.png)
 
 ## Visualisation of VGG Net Activation Maps
 * Input Image
@@ -78,15 +75,15 @@ Our main contribution is a rigorous evaluation of networks of increasing depth, 
 
 * First Convolution Layer Activation Map
 
-[CONV1_1](images/conv1_1_1.jpg)
+![CONV1_1](images/conv1_1_1.jpg)
 
 * Second Convolution Layer Activation Map
 
-[CONV2_1](images/conv2_1_1.jpg)
+![CONV2_1](images/conv2_1_1.jpg)
 
 * Average Pooling Activation Map
 
-[AVG_POOL](images/avg_pool1.jpg)
+![AVG_POOL](images/avg_pool1.jpg)
 
 ## Built With
 
