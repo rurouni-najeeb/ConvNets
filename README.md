@@ -69,20 +69,22 @@ Our main contribution is a rigorous evaluation of networks of increasing depth, 
 ![graph](images/graph.png)
 
 ## Visualisation of VGG Net Activation Maps
+
 * Input Image
+
 ![Input Image](images/car.jpg)
 
 * First Convolution Layer Activation Map
 
 ![CONV1_1](images/conv1_1_1.jpg)
 
-* Second Convolution Layer Activation Map
-
-![CONV2_1](images/conv2_1_1.jpg)
-
 * Average Pooling Activation Map
 
 ![AVG_POOL](images/avg_pool1.jpg)
+
+* Second Convolution Layer Activation Map
+
+![CONV2_1](images/conv2_1_1.jpg)
 
 ## Built With
 
