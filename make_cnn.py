@@ -78,11 +78,11 @@ def train(model,data,n_training_size,image,y,keep_prob):
     with tf.Session() as sess:
         sess.run(init)
         writer = tf.summary.FileWriter('graphs/cnn',sess.graph)
-        ckpt = tf.train.get_checkpoint_state(os.path.dirname('checkpoints/checkpoint'))
+        ckpt = tf.train.get_checkpoint_state(os.path.dirname('checkpoints/cnn/checkpoint'))
         if ckpt and ckpt.model_checkpoint_path:
             print 'Restoring checkpoint...'
             saver.restore(sess,ckpt.model_checkpoint_path)
-        for i in range(N_EPOCHS):
+        for i in range(1, N_EPOCHS+1):
             epoch_loss = 0
             epoch_accuracy = 0
             for j in tqdm(range(n_batches)):
@@ -93,8 +93,8 @@ def train(model,data,n_training_size,image,y,keep_prob):
                 epoch_loss += l
                 epoch_accuracy += acc
             writer.add_summary(summary,global_step=i)
-            if i % 5 == 0:
-                saver.save(sess, 'checkpoints/cnn', i)
+            if i % 2 == 0:
+                saver.save(sess, 'checkpoints/cnn/cnn', i)
             print 'Epoch: {}\tLoss: {}\tAccuracy: {}'.format(i,epoch_loss,epoch_accuracy/n_batches)
 
 def main():

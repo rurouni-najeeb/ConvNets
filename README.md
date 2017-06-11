@@ -86,6 +86,21 @@ Our main contribution is a rigorous evaluation of networks of increasing depth, 
 
 ![CONV2_1](images/conv2_1_1.jpg)
 
+## Visualisation ConvNet codes (fully connected layer using t-SNE and PCA)
+Following are some illustrations for the fully connected layer codes generated for 500 MNIST data points. It is exciting to observe that the codes are generated such that images of the same category (same labels such as 0,1) are very close to one another. Also seemingly similar images or numbers are aligned such that distance between their clouds are smaller than the ones that are different.
+
+* Principal Component Analysis in 3 Dimensions
+
+![PCA](images/pca.gif)
+
+* t-SNE in 3 Dimensions
+
+![tsne3D](images/tsne.gif)
+
+* t-SNE in 2 Dimensions
+
+![tsne2D](images/tsne2.png)
+
 ## Built With
 
 * [Python](https://www.python.org/) - Programming language used
