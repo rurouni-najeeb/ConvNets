@@ -17,6 +17,7 @@ import visualising_vgg as vgg
 IMAGE_WIDTH = 224
 IMAGE_HEIGHT = 224
 IMAGE_DEPTH = 3
+image_dir = '../images/cats'
 path = '../../Tensorflow-CS20SI/Assignment_2/style_transfer/imagenet-vgg-verydeep-19.mat'
 LEARNING_RATE = 1e-3
 CLASS_LABEL = 285   ## We are visualising all the cats' saliency maps
@@ -98,7 +99,6 @@ def main():
     ## Reading in the images
     print 'Reading in the images'
     images = []
-    image_dir = '../images/cats'
     for img in glob.glob(os.path.join(image_dir,"*")):
         x = misc.imread(img)
         x = misc.imresize(x,size=(IMAGE_WIDTH, IMAGE_HEIGHT, IMAGE_DEPTH))
