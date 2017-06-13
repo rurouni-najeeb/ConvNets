@@ -12,7 +12,7 @@ Saliency maps provide an intuitive understanding of how each of the correspondin
 ## Implementation Details
 ### saliency_maps.py
 
-**saliency_maps.py** uses a 19 layer deep VGG network to compute the saliency maps of a set of 10 cat images present in images/cats. Each of the image is in .jpg format and is resized to 221x221 size. Each image consist of 3 color channels namely RGB. The gradients are compuuted by finding the correct class score (i.e cat) and using **tf.gradients(....)** function to calculate the gradient with respect to the source image. 
+**saliency_maps.py** uses a 19 layer deep VGG network to compute the saliency maps of a set of 10 cat images present in images/cats. Each of the image is in .jpg format and is resized to 224x224 size. Each image consist of 3 color channels namely RGB. The gradients are compuuted by finding the correct class score (i.e cat) and using **tf.gradients(....)** function to calculate the gradient with respect to the source image. 
 
 ## Running the code
 ### saliency_maps.py
@@ -33,7 +33,7 @@ python saliency_maps.py
 ### Saliency Maps
 * Input image
 
-![Input Image of a Cat](../images/cats/cat9.jpg)
+![Input Image of a Cat](../images/cats/cat9.jpg =224x224)
 
 * Corresponding saliency map
 
