@@ -33,8 +33,7 @@ python saliency_maps.py
 ### Saliency Maps
 * Input image
 
-![Input Image of a Cat](../images/cats/cat9.jpg =224x224)
-<img src="../images/cats/cat9.jpg", width="224">
+![Input Image of a Cat](../images/cats/cat9.jpg)
 
 * Corresponding saliency map
 
